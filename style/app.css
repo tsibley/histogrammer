@@ -1,0 +1,53 @@
+/* vim: set ts=2 sw=2 expandtab : */
+body {
+  padding-top: 70px;  /* Clear the fixed navbar */
+}
+
+body > .container {
+  /* Allow absolute positioning within the container bounds */
+  position: relative;
+}
+
+
+/* Breadcrumbs */
+.breadcrumb > li + li::before {
+  color: #444;
+}
+
+
+/* SVG */
+.bar {
+  cursor: default;
+}
+.bar.clickable {
+  cursor: zoom-in;
+}
+
+.bar rect {
+  fill: #74c476;
+  shape-rendering: crispEdges;
+  stroke: white;
+}
+.bar.clickable rect {
+  fill: #238b45;
+}
+.bar.clickable:hover rect {
+  fill: #74c476;
+}
+
+.bar text {
+  fill: #aaa;
+  display: none;
+}
+.bar:hover text {
+  fill: #444;
+}
+.show-labels .bar text {
+  display: inline;
+}
+
+.axis path, .axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
