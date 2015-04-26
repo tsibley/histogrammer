@@ -45,6 +45,9 @@ body > .container {
 .show-labels .bar text {
   display: inline;
 }
+.bar.too-small text {
+  display: inline;
+}
 
 .axis path, .axis line {
   fill: none;
