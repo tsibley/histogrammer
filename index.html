@@ -16,13 +16,21 @@
           <a class="navbar-brand">
             Histogrammer
           </a>
+          <button id="load-file" class="btn btn-default btn-sm navbar-btn">
+            Load CSV…
+          </button>
           <button id="toggle-labels" class="btn btn-default btn-sm navbar-btn">
             Labels
           </button>
         </div>
       </div>
     </nav>
-    <div class="container main"></div>
+    <div class="container main">
+      <input type="file" accept=".csv" name="file" id="file" class="hidden">
+      <ol class="breadcrumb">
+        <li class="file">No file loaded</li>
+      </ol>
+    </div>
     <script src="http://d3js.org/d3.v3.min.js"></script>
     <script src="lib/vendor/mousetrap.min.js"></script>
     <script src="lib/histogrammer.js"></script>
