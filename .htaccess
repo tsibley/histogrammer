@@ -1,0 +1,7 @@
+Options -Indexes
+AddDefaultCharset utf-8
+
+# Forbid .git/ access
+RewriteEngine on
+RewriteRule ^/?\.git - [R=404]
+RewriteRule ^/?favicon - [R=404]
